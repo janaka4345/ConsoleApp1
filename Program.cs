@@ -10,24 +10,30 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write("enter your anme:");
-            string name=Console.ReadLine();
-            Console.WriteLine();
-            Console.Write("enter your age:");
-
-            string input_age =Console.ReadLine();
-
-            int age=Convert.ToInt32(input_age);
-
-            Console.WriteLine("your name is : "+name+" and your age is:"+input_age);
-            if (age>20)
+            Console.Write("Input a number to looo fizzbuzz");
+            int number = Convert.ToInt32( Console.ReadLine());
+            for (int i = 1; i <= number; i++)
             {
-                Console.WriteLine("your are too old");
-            }else if (age>14)
-            {
-                Console.WriteLine("your are a teen");
+                if (i%3==0)
+                {
+                    Console.Write("fizz");
+                }
+                if (i % 5 == 0)
+                {
+                    Console.Write("buzz");
+                }
+                if (i % 5 == 0 || i % 3 == 0)
+                {
+                Console.WriteLine("");
+                }
+                else
+                {
+
+                Console.WriteLine(i);
+                }
+
+
             }
-
             Console.ReadLine();
         }
     }
