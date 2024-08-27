@@ -10,20 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello world");
-            int age = 56;
-            int num = 6000000;
-            Console.WriteLine(int.MaxValue);
-            Console.WriteLine(age);
-            Console.WriteLine(num);
-
-
-            string name = "janaka";
-            char initial = 'k';
-            Console.WriteLine(name);
-            Console.Write(initial);
-            Console.Write(initial);
-
+            const int num1 = 10;
+            const int num2 = 15;
+            int remainder;
+            remainder = num1 % num2;
+            Console.WriteLine(remainder);
             Console.ReadLine();
 
 
